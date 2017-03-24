@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SimplecodecastsSass</title>
+    <title>Dev Match</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -20,8 +20,11 @@
       <span class="icon-bar"></span>
     </button>
     
-    <%= link_to 'Saas', root_path, class: 'navbar-brand' %>
-    
+    <!-- Adding font-awesome -->
+    <%= link_to root_path, class: 'navbar-brand' do %>
+    <%= icon('envira') %>
+    Dev Match
+    <% end %>
   </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->
@@ -35,6 +38,8 @@
      </div><!-- /.navbar-collapse -->
     </div>
   </nav>
+  
+  <!--Styling the navbar put in a div class of container. -->
     <div class="container">
       <%= yield %>
     </div>

@@ -9,6 +9,7 @@ gem 'jquery-rails', '4.1.1'
 gem 'turbolinks',   '5.0.1'
 gem 'jbuilder',     '2.4.1'
 gem 'bootstrap-sass', '3.3.7'
+gem 'font-awesome-sass', '4.7.0'
 
 group :development, :test do
   gem 'sqlite3', '1.3.12'
