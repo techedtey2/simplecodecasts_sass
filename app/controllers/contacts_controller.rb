@@ -9,7 +9,7 @@ class ContactsController < ApplicationController
         
             
             if @contact.save
-                flash[:infoggi] = 'Message sent.'
+                flash[:info] = 'Message sent.'
                 redirect_to new_contact_path
             else
                 flash[:error] = 'Message not sent, error occured.' 
