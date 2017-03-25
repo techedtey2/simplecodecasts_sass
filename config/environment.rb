@@ -1,5 +1,5 @@
 # Load the Rails application.
-require_relative 'application'
+require File.expand_path('../application', _FILE_)
 
 # Initialize the Rails application.
 Rails.application.initialize!
