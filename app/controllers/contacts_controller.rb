@@ -12,7 +12,7 @@ class ContactsController < ApplicationController
                 flash[:info] = 'Message sent.'
                 redirect_to new_contact_path
             else
-                flash[:error] = 'Message not sent, error occured.' 
+                flash[:danger] = 'Message not sent. Form cannot be blank.' 
                 redirect_to new_contact_path
             end
     end
