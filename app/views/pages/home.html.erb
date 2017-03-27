@@ -9,7 +9,7 @@
         <div class="well">
             <h2 class="text-center">Basic Membership</h2>
             <p class="text-center">Sign up for basic and get access to the community.</p><br/>
-            <%= link_to 'Free Sign Up', new_model_registration_path, class: 'btn btn-primary btn-lg btn-block' %>
+            <%= link_to 'Free Sign Up', new_model_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-lg btn-block' %>
         </div>
     </div>
     
@@ -17,7 +17,7 @@
         <div class="well">
             <h2 class="text-center">Pro Membership</h2>
             <p class="text-center">Sign up for pro account for $11/month and get full access.</p><br/>
-            <%= link_to 'Pro Sign Up', new_model_registration_path, class: 'btn btn-success btn-lg btn-block' %>
+            <%= link_to 'Pro Sign Up', new_model_registration_path(plan: @pro_plan.id), class: 'btn btn-success btn-lg btn-block' %>
         </div>
     </div>
     
