@@ -3,3 +3,22 @@
     <h1>Welcome To Dev Match</h1>
     <p>A platform where entrepreneurs can meet investors and developers.</p>
 </div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="well">
+            <h2 class="text-center">Basic Membership</h2>
+            <p class="text-center">Sign up for basic and get access to the community.</p><br/>
+            <%= link_to 'Free Sign Up', new_model_registration_path, class: 'btn btn-primary btn-lg btn-block' %>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class="well">
+            <h2 class="text-center">Pro Membership</h2>
+            <p class="text-center">Sign up for pro account for $11/month and get full access.</p><br/>
+            <%= link_to 'Pro Sign Up', new_model_registration_path, class: 'btn btn-success btn-lg btn-block' %>
+        </div>
+    </div>
+    
+</div>
