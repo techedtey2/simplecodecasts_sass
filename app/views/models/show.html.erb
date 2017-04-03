@@ -1,1 +1,8 @@
-<%= @model %>
+
+<%= @model.profile.first_name %> <%= @model.profile.last_name %><br/>
+<%= @model.profile.job_title %><br/>
+<% if current_model.plan_id == 2 %>
+    <%= @model.profile.phone_number %><br/>
+    <%= @model.profile.contact_email %><br/>
+<% end %>
+<%= @model.profile.description %><br/>
