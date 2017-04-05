@@ -13,6 +13,7 @@ gem 'font-awesome-sass', '4.7.0'
 gem 'devise', '4.2.1'
 gem 'stripe'
 gem 'figaro'
+gem 'paperclip', '5.1.0'
 
 group :development, :test do
   gem 'sqlite3', '1.3.12'
