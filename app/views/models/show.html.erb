@@ -1,4 +1,4 @@
-
+<%= image_tag @model.profile.avatar.url(:thumb) %><br/>
 <%= @model.profile.first_name %> <%= @model.profile.last_name %><br/>
 <%= @model.profile.job_title %><br/>
 <% if current_model.plan_id == 2 %>
