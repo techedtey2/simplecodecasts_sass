@@ -17,6 +17,11 @@ class ProfilesController < ApplicationController
           render action: :new 
         end
     end
+    
+    def edit
+    @model = Model.find( params[:model_id] )
+    @profile = @model.profile
+    end
      
     private
     def profile_params
