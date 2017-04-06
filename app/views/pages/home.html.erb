@@ -12,8 +12,8 @@
           <div class="well">
             <h2 class="text-center">Your Profile</h2>
                 <% if current_model.profile %>
-                  <%= link_to "Edit your profile", edit_model_profile_path(model_id: current_model.id), class: 'btn btn-success btn-lg btn-block' %>
-                  <%= link_to "View your profile", model_path(current_model), class: 'btn btn-success btn-lg btn-block' %>
+                  <%= link_to "Edit your profile", edit_model_profile_path(model_id: current_model.id), class: 'btn btn-primary btn-lg btn-block' %>
+                  <%= link_to "View your profile", model_path(current_model), class: 'btn btn-primary btn-lg btn-block' %>
                 <% else %>
                   <p>Create your profile so that you can share your information with the community.</p>
                   <%= link_to "Create your profile", new_model_profile_path(current_model), class: 'btn btn-primary btn-lg btn-block'%>
