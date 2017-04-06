@@ -2,7 +2,7 @@ class ModelsController < ApplicationController
     before_action :authenticate_model!
 
     def index
-    @users = Model.includes(:profile)
+    @models = Model.includes(:profile)
     end
     
     def show
