@@ -4,8 +4,8 @@
     <%= image_tag @model.profile.avatar.url, class: 'model-show-avatar' %>
   </div>
   <div class="col-md-6">
-    <h1><%= @model.profile.first_name %> <%= @model.profile.last_name %></h1>
-    <h3><span class="job-title-icon"><%= job_title_icon %></span> <%= @model.profile.job_title %></h3>
+    <h1 style="color:white;"><%= @model.profile.first_name %> <%= @model.profile.last_name %></h1>
+    <h3 style="color:white;"><span class="job-title-icon"><%= job_title_icon %></span> <%= @model.profile.job_title %></h3>
     <div class="well profile-block profile-description">
       <h3>Description</h3>
       <%= @model.profile.description %>
