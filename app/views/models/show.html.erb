@@ -1,8 +1,22 @@
-<%= image_tag @model.profile.avatar.url(:thumb) %><br/>
-<%= @model.profile.first_name %> <%= @model.profile.last_name %><br/>
-<%= @model.profile.job_title %><br/>
-<% if current_model.plan_id == 2 %>
-    <%= @model.profile.phone_number %><br/>
-    <%= @model.profile.contact_email %><br/>
-<% end %>
-<%= @model.profile.description %><br/>
+
+<div class="row">
+  <div class="col-md-3 text-center">
+    <%= image_tag @model.profile.avatar.url, class: 'model-show-avatar' %>
+  </div>
+  <div class="col-md-6">
+    <h1><%= @model.profile.first_name %> <%= @model.profile.last_name %></h1>
+    <h3><span class="job-title-icon"><%= job_title_icon %></span> <%= @model.profile.job_title %></h3>
+    <div class="well profile-block profile-description">
+      <h3>Description</h3>
+      <%= @model.profile.description %>
+    </div>
+    
+    <% if true #current_model.plan_id == 2 %>
+      <div class="well profile-block contact-info">
+        <h3>Contact Info</h3>
+        <%= @model.profile.phone_number %><br/>
+        <%= @model.profile.contact_email %><br/>
+      </div>
+    <% end %>
+  </div>
+</div>
